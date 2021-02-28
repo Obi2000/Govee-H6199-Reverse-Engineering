@@ -16,8 +16,10 @@ With all that out of the way, on to the documentation!
 # My Findings
 
 I have only tested this on the Govee H6199 so I am unsure if these packets or UUID's work for anything else.
-Log is found by enabling developer options bluetooth_hci snoop log `adb bugreport anewbugreport && unzip anewbugreport.zip && wireshark FS/data/log/bt/btsnoop_hci.log`
-To filter the ATT packets, 
+Log is found by enabling developer options bluetooth_hci snoop log `adb bugreport anewbugreport && unzip anewbugreport.zip && wireshark FS/data/misc/bluetooth/logs/btsnoop_hci.log`
+To filter the ATT packets:
+(btatt or btgatt) and (btatt.handle in {0x15 0x11}) and btatt.opcode == 0x52 and not (btatt.value[0] == 0xaa)
+
 ### Checklist of packets
 - [x] Keep alive
 - [x] Change Color
@@ -160,7 +162,7 @@ RED, GREEN, BLUE range is 0 - 255 or 0x00 - 0xFF    -   Bytes 9 & 10 are set to 
 The individual 15, segments are distrubuted between left(1-8)(00-ff)and right(9-15)(00-7f).
 To address individual segments see ***Color_Segments_chart.md***.
 ```
-0x33, 0x05, 0x0b, RED, GREEN, BLUE, 0x00, 0x00, LEFT, RIGHT, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, XOR)
+0x33, 0x05, 0x0b, RED, GREEN, BLUE, 0x00, 0x00, LEFT, RIGHT, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, XOR
 ```
 
 ### Set Brightness

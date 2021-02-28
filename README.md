@@ -54,7 +54,6 @@ The third byte differs based on type.
             0x00: Off
             0x01: On
         0x04: Brightness
-            0x00: 0% (also Off)
             0x14: 1%
             0xfe: 100%
         0x05: Color

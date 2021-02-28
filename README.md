@@ -36,7 +36,6 @@ The first byte is a identifier, followed by 18 bytes of data, followed by an XOR
     
     0x33: Indicator
     0xaa: keep alive
-    0xa1: DIY VALUES
 
 The second byte seems identify the packet type
 
@@ -203,7 +202,7 @@ The next 4 bytes are data used depending on the mode -  WIP
 3305040700000000000000000000000000000035 = Scene(Romantic)
 330504080000000000000000000000000000003a = Scene(Blinking)
 330504090000000000000000000000000000003b = Scene(Candlelight)
-3305040f0000000000000000000000000000003d = Scene(snowflake)```
+3305040f0000000000000000000000000000003d = Scene(snowflake)
 ```
 
 gatttool -i hci0 -b (mac) --char-write-req -a 0x0015 -n (command)

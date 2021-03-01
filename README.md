@@ -1,7 +1,8 @@
 # Govee-H6199-Reverse-Engineering
 My attempt at reverse engineering the Govee Immersion H6199 RGB lighting strips BLE commands.
-A huge thanks to BeauJBurroughs who provided most of the original information.
 ------
+A huge thanks to BeauJBurroughs who provided most of the original information.
+
 # A Message to Govee
 
 >In the U.S., Section 103(f) of the Digital Millennium Copyright Act (DMCA) [(17 USC § 1201 (f) - Reverse Engineering)](https://www.law.cornell.edu/uscode/text/17/1201) specifically states that it is legal to reverse engineer and circumvent the protection to achieve interoperability between computer programs (such as information transfer between applications). Interoperability is defined in paragraph 4 of Section 103(f).

@@ -60,7 +60,7 @@ The third byte differs based on type.
             0xfe: 100%
         0x05: Color
             0x00: Video
-            0x04: Brightness
+            0x04: Scene
             0x0b: Segment/Color/CT
             0x0c: Music
             

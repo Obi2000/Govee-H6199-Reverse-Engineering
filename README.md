@@ -1,6 +1,6 @@
 # Govee-H6199-Reverse-Engineering
 My attempt at reverse engineering the Govee Immersion H6199 RGB lighting strips BLE commands.
-
+A huge thanks to BeauJBurroughs who provided most of the original information.
 ------
 # A Message to Govee
 
@@ -224,4 +224,4 @@ gatttool -i hci0 -b <bt address here> --char-write-req -a 0x0015 -n 33050bffdfb8
 
 
 
-Thank you to egold555,Freemanium, and ddxtanx for the initial findings.
+Thank you to BeauJBurroughs,egold555,Freemanium, and ddxtanx for the initial findings.
